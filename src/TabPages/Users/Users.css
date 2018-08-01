@@ -1,0 +1,13 @@
+.app-Home{
+  text-align: left;
+}
+
+.no-margin{
+  margin: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+th {
+  text-align: center;
+}

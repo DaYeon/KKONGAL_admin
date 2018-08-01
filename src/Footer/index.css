@@ -1,0 +1,10 @@
+.app-footer{
+  background-color: #A7B0FC;
+  height: 10vh;
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.footer-text{
+  vertical-align: middle;
+}

@@ -1,0 +1,18 @@
+.app-header{
+  background-color: #ffffff;
+  height: 15vh;
+}
+
+.header-title{
+  font-size: 25px;
+  color: #4B5BE3;
+  font-weight: bold;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  max-height: 70px;
+  text-align: center;
+}
+
+.tab-item{
+  color: #A7B0FC;
+}
