@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Tabs, Tab, nav, ul, li} from 'react-bootstrap';
-import './Header.css';
+import './index.css';
 import {withRouter} from 'react-router';
 type Props ={
   history:any,

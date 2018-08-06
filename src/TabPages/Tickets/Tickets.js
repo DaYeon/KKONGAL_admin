@@ -19,7 +19,7 @@ function NameValidator(value) {
     response.notification.type = 'error';
     response.notification.msg = 'Value must be inserted';
     response.notification.title = 'Requested Value';
-  } else if (value.length < 10) {
+  } else if (value.length < 2) {
     response.isValid = false;
     response.notification.type = 'error';
     response.notification.msg = 'Value must have 10+ characters';
@@ -29,7 +29,9 @@ function NameValidator(value) {
 }
 
 const tickets = [
-
+  {id:1, name:'one-week ticket', price:'3000'},{id:2, name:'two-weeks ticket', price:'6000'}
+  ,{id:3, name:'one-month ticket', price:'10000'},{id:4, name:'three-months ticket', price:'27000'}
+  ,{id:5, name:'season ticket', price:'48000'}
 ];
 
 class Tickets extends React.Component<{}> {
@@ -42,9 +44,8 @@ class Tickets extends React.Component<{}> {
           <TableHeaderColumn dataField='name' editable={ { type: 'textarea',
             validator: NameValidator } } editColumnClassName='editing-jobsname-class'
             invalidEditColumnClassName='invalid-jobsname-class'>Ticket Name</TableHeaderColumn>
-          <TableHeaderColumn dataField='name' editable={ { type: 'textarea',
-            validator: NameValidator } } editColumnClassName='editing-jobsname-class'
-            invalidEditColumnClassName='invalid-jobsname-class'>Price</TableHeaderColumn>
+          <TableHeaderColumn dataField='price' editable={ { type: 'textarea',
+            validator: NameValidator } }>Price</TableHeaderColumn>
       </BootstrapTable>
     );
   }

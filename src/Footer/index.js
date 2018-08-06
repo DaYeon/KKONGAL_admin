@@ -1,7 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import './Footer.css';
+import './index.css';
 import { Grid, Row, Col } from 'react-bootstrap';
 
 class Footer extends Component<{}> {
